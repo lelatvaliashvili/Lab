@@ -1,0 +1,30 @@
+﻿<p>Updated database content</p>
+
+
+<div>
+
+    <h1>Measurement Parameters</h1>
+
+    <p>The database content</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>measurementID</th>
+                <th>measurementName</th>
+                <th>measurementUnit</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.MeasurementId</td>
+                    <td>@item.MeasurementName</td>
+                    <td>@item.MeasurementUnit</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

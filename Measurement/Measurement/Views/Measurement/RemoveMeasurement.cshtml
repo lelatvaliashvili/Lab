@@ -1,0 +1,38 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<p>The item has been removed</p>
+
+<p>Updated database after 'Delete' operation:</p>
+
+
+<div>
+
+    <h1>Measurement Parameters</h1>
+
+    <p>The database content</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>measurementID</th>
+                <th>measurementName</th>
+                <th>measurementUnit</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.MeasurementId</td>
+                    <td>@item.MeasurementName</td>
+                    <td>@item.MeasurementUnit</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
